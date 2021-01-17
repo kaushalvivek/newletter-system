@@ -1,2 +1,2 @@
-# newletter-system
+# newsletter-system
 A system to create and mange and use mailing lists.
