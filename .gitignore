@@ -1,3 +1,6 @@
+# Configs
+backend/configs
+
 # Logs
 logs
 *.log

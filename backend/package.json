@@ -1,0 +1,24 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "backend for newsletter management service",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaushalvivek/newsletter-system.git"
+  },
+  "keywords": [
+    "newsletter",
+    "node",
+    "mern"
+  ],
+  "author": "kaushalvivek",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kaushalvivek/newsletter-system/issues"
+  },
+  "homepage": "https://github.com/kaushalvivek/newsletter-system#readme"
+}
