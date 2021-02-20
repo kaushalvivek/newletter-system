@@ -1,5 +1,5 @@
 const router = require('express').Router();
-let History = require('../models/item.model');
+const History = require('../models/history.model');
 
 router.route('/').get((req, res) => {
     History.find()

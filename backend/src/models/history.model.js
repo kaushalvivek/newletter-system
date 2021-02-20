@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 
 const historySchema = new Schema({
     user: {type : String},
-    content: {type: Mixed},
+    content: {type: String},
     targets: [String],
     meta: []
 })
