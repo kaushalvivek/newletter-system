@@ -25,7 +25,32 @@ exports.getUserById = async function (req, res) {
         const user = await UserService.getUserById(req.params.id);
         return user ?
             res.status(200).json({ status: 200, data: user, message: `User fetched successfully.` })
-            : res.status(404).json({ status: 404, message: `User not found` });
+            : res.status(404).json({ status: 404, message: `User not found.` });
+    }
+    catch (e) {
+        return res.status(400).json({ status: 400, message: e.message });
+    }
+}
+
+exports.deleteUserById = async function (req, res) {
+    try {
+        const response = await UserService.deleteUserById(req.params.id);
+
+        return response ?
+            res.status(200).json({ status: 200, message: `User deleted successfully.` })
+            : res.status(404).json({ status: 404, message: `User not found.` });
+    }
+    catch (e) {
+        return res.status(400).json({ status: 400, message: e.message });
+    }
+}
+
+exports.updateUserById = async function (req, res) {
+    try {
+        const response = await UserService.updateUserById(req);
+        return response? 
+         res.status(201).json({ status: 201, message: `User updated successfully.` })
+         : res.status(404).json({ status: 404, message: `User not found.` });
     }
     catch (e) {
         return res.status(400).json({ status: 400, message: e.message });
